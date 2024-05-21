@@ -311,6 +311,20 @@ main{
   color:rgb(201, 184, 184);
 }
 
+#msg{
+  color: rgb(201, 184, 184);
+  font-size: 8vmin;
+  text-align: center;
+  position: relative;
+  left:20vmin;
+  width: 60vmin;
+}
+
+.message{
+  height: 40vmin;
+  position:relative;
+  top:200px;
+}
 .line1 {
   position:absolute;
     width: 0;
