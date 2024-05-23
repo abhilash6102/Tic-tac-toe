@@ -54,8 +54,9 @@ const checkwinner=()=>{
                 Times(posval1);
                 value(patterns[0],patterns[2]);
                 lines(patterns[0],patterns[2]);
+                disableboxes();
                 await showwinner(posval1);
-                await disableboxes();
+                
                 }
                 call();
             }
@@ -93,14 +94,9 @@ const showwinner=(winner)=>{
 }
  
 const disableboxes=()=>{
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            for(let i of boxes){
-                i.disabled=true;
-            }
-            resolve();
-        }, 500);
-    });
+    for(let i of boxes){
+        i.disabled=true;
+    }
    
 }
 
